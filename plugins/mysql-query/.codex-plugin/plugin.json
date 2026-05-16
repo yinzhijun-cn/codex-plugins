@@ -1,0 +1,38 @@
+{
+  "name": "mysql-query",
+  "version": "0.1.0",
+  "description": "查询 MySQL 数据并支持多环境配置",
+  "author": {
+    "name": "zero",
+    "url": "https://github.com/zero"
+  },
+  "homepage": "https://www.mysql.com/",
+  "repository": "https://github.com/zero/mysql-query",
+  "license": "MIT",
+  "keywords": [
+    "mysql",
+    "database",
+    "query"
+  ],
+  "skills": "./skills/",
+  "mcpServers": "./.mcp.json",
+  "interface": {
+    "displayName": "MySQL 数据查询",
+    "shortDescription": "按环境执行只读 MySQL 查询",
+    "longDescription": "用于通过配置好的多个 MySQL 环境执行只读 SQL 查询，支持默认环境、数据库覆盖、结果行数限制和 MCP 工具调用",
+    "developerName": "zero",
+    "category": "Developer Tools",
+    "capabilities": [
+      "Interactive",
+      "Read"
+    ],
+    "websiteURL": "https://dev.mysql.com/doc/",
+    "defaultPrompt": [
+      "查询 dev 环境当前数据库有哪些表",
+      "在 test 环境执行一条 SELECT 并限制返回 20 行",
+      "列出已配置的 MySQL 查询环境"
+    ],
+    "brandColor": "#2563EB",
+    "screenshots": []
+  }
+}

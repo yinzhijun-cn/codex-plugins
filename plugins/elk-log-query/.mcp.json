@@ -1,0 +1,14 @@
+{
+  "mcpServers": {
+    "elk-log-query": {
+      "command": "python3",
+      "args": [
+        "./scripts/query_elk_logs.py"
+      ],
+      "env": {
+        "ELK_DEFAULT_ENVIRONMENT": "dev",
+        "ELK_TIMEOUT_SECONDS": "15"
+      }
+    }
+  }
+}

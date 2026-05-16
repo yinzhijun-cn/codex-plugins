@@ -1,0 +1,40 @@
+{
+  "name": "elk-log-query",
+  "version": "0.1.0",
+  "description": "查询 ELK 日志并辅助定位异常链路",
+  "author": {
+    "name": "zero",
+    "url": "https://github.com/zero"
+  },
+  "homepage": "https://www.elastic.co/elastic-stack",
+  "repository": "https://github.com/zero/elk-log-query",
+  "license": "MIT",
+  "keywords": [
+    "elk",
+    "elasticsearch",
+    "log",
+    "observability"
+  ],
+  "skills": "./skills/",
+  "mcpServers": "./.mcp.json",
+  "apps": "./.app.json",
+  "interface": {
+    "displayName": "ELK 日志查询",
+    "shortDescription": "按服务、关键字、traceId 和时间范围查询 ELK 日志",
+    "longDescription": "用于查询 Elasticsearch 中的应用日志，支持按服务名、索引、关键字、traceId、时间范围过滤，适合排查接口报错、链路追踪和问题复盘",
+    "developerName": "zero",
+    "category": "Observability",
+    "capabilities": [
+      "Interactive",
+      "Read"
+    ],
+    "websiteURL": "https://www.elastic.co/guide/en/elasticsearch/reference/current/search-search.html",
+    "defaultPrompt": [
+      "查询 order-service 最近 30 分钟包含 error 的日志",
+      "按 traceId 查询完整日志链路并按时间排序",
+      "按订单号搜索最近 2 小时相关日志并总结异常"
+    ],
+    "brandColor": "#0F766E",
+    "screenshots": []
+  }
+}

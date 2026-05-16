@@ -1,0 +1,15 @@
+{
+  "mcpServers": {
+    "mysql-query": {
+      "command": "python3",
+      "args": [
+        "./scripts/query_mysql.py"
+      ],
+      "env": {
+        "MYSQL_QUERY_DEFAULT_ENVIRONMENT": "dev",
+        "MYSQL_QUERY_DEFAULT_LIMIT": "100",
+        "MYSQL_QUERY_AUTO_INSTALL_DEPS": "false"
+      }
+    }
+  }
+}

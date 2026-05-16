@@ -1,0 +1,22 @@
+{
+  "environments": {
+    "dev": {
+      "baseUrl": "http://127.0.0.1:5601",
+      "accessMode": "kibana_proxy",
+      "kibanaProxyPath": "/api/console/proxy",
+      "username": "elastic",
+      "password": "YOUR_ELK_PASSWORD",
+      "indexPattern": "app-*",
+      "timeoutSeconds": 15
+    },
+    "prod": {
+      "baseUrl": "http://127.0.0.1:5601",
+      "accessMode": "kibana_proxy",
+      "kibanaProxyPath": "/api/console/proxy",
+      "username": "elastic",
+      "password": "YOUR_ELK_PASSWORD",
+      "indexPattern": "app-*",
+      "timeoutSeconds": 15
+    }
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "environments": {
+    "dev": {
+      "host": "127.0.0.1",
+      "port": 3306,
+      "username": "root",
+      "password": "YOUR_MYSQL_PASSWORD",
+      "database": "app_order",
+      "charset": "utf8mb4",
+      "connectTimeoutSeconds": 10,
+      "readTimeoutSeconds": 30,
+      "allowWrite": false
+    },
+    "prod": {
+      "host": "127.0.0.1",
+      "port": 3306,
+      "username": "readonly_user",
+      "password": "YOUR_MYSQL_PASSWORD",
+      "database": "app_order",
+      "charset": "utf8mb4",
+      "connectTimeoutSeconds": 10,
+      "readTimeoutSeconds": 30,
+      "allowWrite": false
+    }
+  }
+}

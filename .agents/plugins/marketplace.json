@@ -1,0 +1,32 @@
+{
+  "name": "local_plugins",
+  "interface": {
+    "displayName": "Local Plugins"
+  },
+  "plugins": [
+    {
+      "name": "elk-log-query",
+      "source": {
+        "source": "local",
+        "path": "./plugins/elk-log-query"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "Observability"
+    },
+    {
+      "name": "mysql-query",
+      "source": {
+        "source": "local",
+        "path": "./plugins/mysql-query"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "Developer Tools"
+    }
+  ]
+}
